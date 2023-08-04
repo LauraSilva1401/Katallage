@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Social icons menu effect </title>
+    <style>
+        .circles {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+        }
+
+        .circle {
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="Conditions">
+        <ul class="menu">
+            <div class="toggle">
+                <i class="fa-solid fa-plus">CHRONIC DISEASES</i>
+            </div>
+            <li style="--i:0;--clr:#ff2972" class="auto">
+                <a href="#">
+                    <i class="fa-solid fa-gamepad">AutoImmune Diseases</i>
+                </a>
+                <!-- Two circles that appear on click -->
+                <div class="circles">
+                    <div class="circle">TRIAL</div>
+                    <div class="circle">TRIAL</div>
+                </div>
+            </li>
+            <li style="--i:1;--clr:#fee800" class="non-auto">
+                <a href="#">
+                    <i class="fa-solid fa-user" class="textNon">Non-AutoImmune Diseases</i>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        let circles = document.querySelector('.circles');
+
+        toggle.onclick = function() {
+            menu.classList.toggle('active');
+            circles.classList.toggle('show');
+        };
+    </script>
+
+</body>
+</html>
