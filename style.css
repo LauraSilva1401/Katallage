@@ -1,0 +1,1464 @@
+
+/* ================ GOOGLE FONTS ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root
+{
+
+    --black: #333;
+    --light-color: #cdaa7c;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+   
+  }
+
+*
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+.navbar {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0px;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #648bcd;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 5px solid #FBE7EA; /* Add border styles */
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.navbar-item:hover {
+    background-color: #efcbc9;
+}
+
+.navbar-logo img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/*Slider Style Starts*/
+
+.home .home-slider .slide
+{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    justify-content: flex-start;
+}
+
+.home .home-slider .slide1
+{
+    background: url(img/1.png);
+}
+.home .home-slider .slide2
+{
+    background: url(img/2.png);
+}
+.home .home-slider .slide3
+{
+    background: url(img/3.png);
+}
+
+.home .home-slider .slide4
+{
+    background: url(img/4.png);
+}
+
+.home .home-slider .slide5
+{
+    background: url(img/5.png);
+}
+
+
+
+.home .home-slider .slide1,
+.home .home-slider .slide2,
+.home .home-slider .slide3
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home .home-slider .slide .content
+{
+    text-align: center;
+    padding-left: 9rem;
+}
+
+.home .home-slider .slide .content h3
+{
+    color: var(--light-color);
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+
+.home .home-slider .slide .content h1
+{
+    color: #fff;
+    font-size: 8rem;
+}
+
+.home .home-slider .slide .content p
+{
+    color: #e6e7e7;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.btn
+{
+    margin: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    border: 5px solid rgba(124, 124, 205, 0.2);
+    background: transparent;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    /*background: #5cb0e6;*/
+    background: #89d2c9;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.btn:hover.btn:before
+{
+    left: 0;
+}
+
+.swiper-pagination-bullet
+{
+    background: var(--light-color)!important;
+    width: 15px!important;
+    height: 15px!important;
+    border-radius: 0!important;
+
+}
+
+
+/*Slider Style Ends*/
+
+/*Services Style Starts*/
+
+.kwcImage {
+    width: 25%;
+    height: auto;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*new start*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .services-section {
+   /*background-image: url("img/Renee.png");*//* Replace with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  
+  .service {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity and color to your liking */
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url(img/Services.png);
+  }
+
+  .functional_medicine
+  {
+    background-image: url(img/Functional.png);
+  }
+
+  .cancer_supportive
+  {
+    background-image: url(img/CancerPreventionAndSupportiveCare.png);
+  }
+
+
+  .weight_loss
+  {
+    background-image: url(img/WeightLossandSarcopenia.png);
+  }
+
+  .IV_Therapy
+  {
+    background-image: url(img/IVTherapy2.png);
+  }
+
+  .smart
+  {
+    background-image: url(img/SMART.png);
+  }
+
+  .chronic_diseases
+  {
+    background-image: url(img/ChronicInfectiousDiseases.png);
+  }
+
+  
+
+  .service-content {
+    
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .service h3 {
+    color: #ffffff; /* White text color */
+    font-size: 15px;
+  }
+  
+
+/*new final*/
+
+/*Services Style Ends*/
+
+/* Conditions Treated Starts */
+
+.conditions-list {
+    list-style-type: disc;
+    margin-left: 40px;
+ 
+}
+
+.Conditionsflex-box {
+    display: flex;
+    align-items: center;
+    background-color: #FFF6F9;
+    color: black;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/*trial*/
+
+.Conditions
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    color: #fff;
+}
+
+.menu{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: 0.5s;
+    transform: rotate(0deg) translateX(40px);
+    transform-origin: 200px;
+    transition-delay: calc(0.1s * var(--i));
+
+}
+.menu.active li{
+    transform: rotate(calc(360deg / 8 * var(--i))) translateX(0px);
+}
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: var(--clr);
+    border: 2px solid var(--clr);
+    border-radius: 50%;
+    font-size: 1.5em;
+    transform: rotate(calc(-1450deg / -8 * var(--i)));
+    transition: 1s;
+
+
+}
+.menu li a:hover{
+    transition: 0s;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 50px var(--clr);
+    color: #333;
+}
+.menu .toggle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 2em;
+    transition: transform 1.25s;
+
+}
+
+
+
+.menu.active .toggle{
+    transform: rotate(360deg);
+    /*margin-left: 40px;*/
+}
+
+.menu.active .non-auto
+{
+    rotate: 135deg;
+    margin-left: 70px;
+}
+
+.menu.active .auto
+{
+    
+    margin-left: -190px;
+}
+
+
+
+
+
+/*trial ends*
+
+/* Conditions Treated Ends */
+
+
+
+/*OurTeam Style Start*/
+
+.home-ourteam
+{
+    margin-top: 50px;
+}
+
+.ourteamImage {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 50;
+}
+
+.image-ourteam {
+
+    padding-bottom: 50px;
+}
+
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    max-width: 250px;
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .card-btn {
+    background-color: #89d2c9;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .card-link 
+  {
+    color: #fff;
+  }
+  
+  .card-btn:hover {
+    background-color: #efcbc9;
+  } 
+  
+  /* Swiper Pagination Styles */
+  
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    opacity: 0.7;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .swiper-wrapperOurTeam
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+ 
+
+
+/*OurTeam Style Ends*/
+
+/*Henri/BIO Style Starts*/
+
+.henrinameImage {
+
+    display: block;
+    margin-left: 40px;
+    margin-right: auto;
+    width: 50%;
+    
+    /*padding-bottom: 50;*/
+}
+
+/*.image-henri {
+
+    padding-bottom: 50px;
+}*/
+
+
+.henriImage {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%; /* This will make the image circular */
+    object-fit: cover; /* This property ensures the image covers the entire circle without distortion */
+    margin-left: 200px;
+  }
+
+
+  
+
+.bioimages
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    /*row-gap: 1.5rem;*/
+}
+
+/*body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }*/
+  
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7fffe;
+    color: black;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+}
+
+.henribio
+{
+    margin-bottom: 50px;
+}
+
+.henricontact__container
+{
+    row-gap: 3rem;
+}
+
+.henricontainer 
+{
+    max-width: 768px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.henrigrid
+{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.biocontactinfo
+{
+    margin-top: 100px;
+    margin-left: 40px;
+   
+}
+
+.henricontact__icon 
+{
+    font-size: 30px;
+    color: #efcbc9;
+    margin-right: .75rem;
+}
+
+
+
+.henricontact__subtitle 
+{
+    font-size: 15px;
+    color: hsl(340, 8%, 65%);
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+}
+
+.henricontact__information
+{
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    
+   /* margin: 0 0 3 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;*/
+    /*background-color: hsl(340, 60%, 99%);*/
+   /* color: hsl(340, 8%, 65%);*/
+}
+
+#dynamic-text
+{
+    margin-right: 40px;
+    margin-left: 200px;
+    font-size: 13px;
+    text-align: justify;
+    
+}
+
+.experienceflex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6F9;
+    color: black;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.bioExperienceImage {
+    display: block;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 10%;
+    
+  }
+
+#experiencedynamic-text
+{
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 13px;
+    text-align: justify;
+    
+}
+
+.bioSpecializingImage {
+    display: block;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 10%;
+    
+  }
+
+.specializingflex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7fffe;
+    color: black;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+#specializingdynamic-text
+{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-align: justify;
+    
+}
+
+.specializingBio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    color: black;
+    padding-right: 10px;
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.bioTestimonioImage
+{
+    display: block;
+    margin-right: 100px;
+    margin-top: 0px;
+    width: 40%;
+    margin-left: 70px;
+}
+
+.educationflex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6F9;
+    color: black;
+    padding-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.bioEducationImage {
+    display: block;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 10%;
+    
+  }
+
+#educationdynamic-text
+{
+    margin-right: 40px;
+    margin-left: 40px;
+    font-size: 13px;
+    text-align: justify;
+    
+}
+  
+
+/*Henri/BIO Style Ends*/
+
+/* IV Therapy Service Style Starts*/
+
+.IvTherapySpecialistButtonImage
+{
+    height: 105px;
+    width: 105px;
+    border-radius: 50%; 
+}
+
+.IVTherapySpecialist-btn {
+    background-color: #cffff9;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    
+    margin-left: -440px;
+  }
+
+.IVTherapySpecialistInfo
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    /*row-gap: 1.5rem;*/
+}
+
+.IVTherapyTitleImage {
+
+    display: block;
+    margin-left: 150px;
+    margin-right: 0px;
+    width: 20%;
+    padding-bottom: 50;
+}
+
+.image-IVTherapyTitle {
+
+    padding-bottom: 0px;
+}
+
+.IVTherapy-images
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    /*row-gap: 1.5rem;*/
+}
+
+.IVTherapy-Header
+{
+    margin-top: 100px;
+    margin-bottom: none;
+}
+
+.SpecialistText
+{
+    color: #648bcd;
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.SpecialistName
+{
+    color: black;
+    font-size: 16px;
+    margin-left: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.IVTherapyflex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE7EA;
+    color: black;
+    padding-right: 10px;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.specialistInfo 
+{
+    margin-left: 0px;
+}
+
+#IVTherapydynamic-text
+{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    
+}
+
+.trial 
+{
+    margin-bottom: -5px;
+}
+
+.IvTherapyVitaminCImage 
+{
+    margin-left: 0px;
+}
+
+.IVConditions-FlexBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF6F9;
+    color: black;
+    /*padding-right: 10px;*/
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 150px;
+    min-height: 200px;
+    max-width: 1200px;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.IVConditionsList
+{
+    columns: 3;
+    margin-bottom: 30px;
+}
+
+.IVConditionsTitle
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #648BCD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.IVList
+{
+    list-style: disc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.IVListItem
+{
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.IVBottomPicture
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 100%;
+}
+
+/*==================== SKILLS ====================*/
+
+.skills__container
+{
+    row-gap: 0;
+}
+
+.skills__data
+{
+    text-align: justify;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 620px;
+}
+
+.skills__header
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-right: 500px;
+    width: 200px;
+    color: #648BCD;
+}
+
+.skills__icon
+{
+    margin-right: .75rem;
+}
+
+.skills__icon,
+.skills__arrow {
+    font-size: 2rem;
+    color: orange;
+}
+
+.skills__title
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.skills__subtitle 
+{
+    font-size: .813rem;
+    color: rgb(161, 159, 173);
+}
+
+.skills__arrow
+{
+
+    transition: .4s;
+}
+
+.skills__list
+{
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+}
+
+.skills__titles
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.skills__name
+{
+    font-size: .938rem;
+    font-weight: 500;
+}
+
+.skills__bar 
+{
+    background-color: rgb(193, 182, 252);
+}
+
+.skills__percentage 
+{
+    display: block;
+    background-color: rgb(110, 87, 224);
+}
+
+.skills__bar,
+.skills__percentage
+{
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills__html
+{
+    width: 80%;
+}
+
+.skills__css
+{
+    width: 60%;
+}
+
+.skills__js
+{
+    width: 30%;
+}
+
+.skills__soft 
+{
+    width: 80%;
+}
+
+.skills__groupWork
+{
+    width: 80%;
+}
+
+.skills__attentionToDetail
+{
+    width: 80%;
+}
+
+.skills__attentionToDetail2
+{
+    width: 80%;
+}
+
+.skills__Excel
+{
+    width: 90%;
+}
+
+.skills__orderFulfillment
+{
+    width: 80%;
+}
+
+.skills__close .skills__list{
+    height: 0;
+    overflow: hidden;
+}
+
+.skills__open .skills__list
+{
+    height: max-content;
+    margin-bottom: 2.5rem;
+    
+}
+
+.skills__open .skills__arrow
+{
+    transform: rotate(-180deg)
+}
+
+.skills__content
+{
+    width: 500px;
+}
+
+.IVTherapyTypes
+{
+    align-items: left;
+}
+
+.IVTherapy-bodyimages
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: -200px;
+    /*row-gap: 1.5rem;*/
+}
+
+.serviceslink
+{
+    color: #fff;
+}
+
+
+/*IV Therapy Service Style Ends*/
+
+/*ContactUs Style Start*/
+
+.contact 
+{
+    margin-top: 50px;
+}
+
+.contactusImage {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding-bottom: 50;
+   
+}
+
+.image-contactus {
+
+    padding-bottom: 50px;
+   
+}
+
+.contactusfrontImage {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-bottom: 50;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.image-contactusfront {
+
+    padding-bottom: 50px;
+}
+
+
+.contact__container
+{
+    row-gap: 3rem;
+}
+
+.container 
+{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid
+{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact__information
+{
+    display: flex;
+    margin-bottom: 2rem;
+    
+   /* margin: 0 0 3 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;*/
+    /*background-color: hsl(340, 60%, 99%);*/
+   /* color: hsl(340, 8%, 65%);*/
+}
+
+.contact__icon 
+{
+    font-size: 40px;
+    color: #efcbc9;
+    margin-right: .75rem;
+}
+
+.contact__title
+{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.contact__subtitle 
+{
+    font-size: 15px;
+    color: hsl(340, 8%, 65%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact__content 
+{
+    background-color: hsl(340, 70%, 96%);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact__label 
+{
+    font-size: .75rem;
+    color: hsl(340, 8%, 15%);
+}
+
+.contact__input 
+{
+    width: 100%;
+    background-color: hsl(340, 70%, 96%);
+    color: hsl(340, 8%, 45%);
+    font-family: 'Poppins', sans-serif;;
+    font-size: .938rem; 
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+
+
+/*ContactUs Style Ends*/
+
+/*==================== FOOTER ====================*/
+
+.footer
+{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #efcbc9;
+}
+.footer__container
+{
+    row-gap: 3.5rem;
+    font-size: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__bg 
+{
+    
+    padding: 2rem 0 3rem;
+    
+}
+
+.footer__title
+{
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.footer__subtitle
+{
+    font-size: .813rem;
+}
+
+.footer__links
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    /*row-gap: 1.5rem;*/
+}
+
+ul 
+{
+    list-style: none;
+}
+
+div
+{
+    display: block;
+}
+
+.footer__link:hover 
+{
+    color: hsl(340, 92%, 85%);
+}
+
+.footer__social
+{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    justify-self: flex-end;
+}
+
+.footer__social:hover 
+{
+    color: hsl(340, 92%, 85%);
+}
+
+.footer__copy {
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    margin-top: 3rem;
+}
+
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social
+{
+    color: #FFF;
+} 
+
+/*Footer Style Ends*/
+
+
+/*media query*/
+
+@media (max-width: 991px)
+{
+    html {
+        font-size: 55%;
+    }
+    header
+    {
+        padding: 1rem 2rem;
+    }
+    header .logo img 
+    {
+        height: 7rem;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    /*navbar media query*/
+    header .logo img
+    {
+        height: 7rem;
+    }
+
+    header .icons #menu
+    {
+        display: inline-block;
+    }
+
+    header .navbar
+    {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(205,170,124,0.2);
+        border-bottom: .1rem solid rgba(205,170,124,0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+
+    header .navbar .active
+    {
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
+
+    header .navbar a
+    {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--black);
+    }
+
+    /*Slider Media Query*/
+
+    .home .home-slider .slide
+    {
+        justify-content: center;
+    }
+
+    .home .home-slider .slide .content
+    {
+        padding: 0;
+    }
+
+    .home .home-slider .slide .content h1
+    {
+        font-size: 7rem;
+    }
+
+}
